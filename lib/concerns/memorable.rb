@@ -8,7 +8,7 @@ module Memorable #self. not distinguishing for class method in a module.
     def reset_all
       self.all.clear
     end
-    
+
     def count
       self.all.count
     end
