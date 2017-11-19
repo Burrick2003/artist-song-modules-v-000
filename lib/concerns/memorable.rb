@@ -2,6 +2,9 @@ module Memorable
 
 
 module InstanceMethods
+  def self.count
+    self.all.count
+  end
 end
 
 module ClassMethods
