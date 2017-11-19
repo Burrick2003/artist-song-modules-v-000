@@ -1,14 +1,15 @@
-module Memorable
+module Memorable #self. not distinguishing for class method in a module.
 
 
   module InstanceMethods
   end
 
   module ClassMethods
-    def self.reset_all
+    def reset_all
       self.all.clear
     end
-    def self.count
+    
+    def count
       self.all.count
     end
   end
