@@ -12,5 +12,9 @@ module Memorable #self. not distinguishing for class method in a module.
     def count
       self.all.count
     end
+  
+
+
+
   end
 end
