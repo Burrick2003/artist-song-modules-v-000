@@ -2,6 +2,9 @@ module Memorable #self. not distinguishing for class method in a module.
 
 
   module InstanceMethods
+    def to_param
+      name.downcase.gsub(' ', '-')
+    end
   end
 
   module ClassMethods
@@ -12,7 +15,7 @@ module Memorable #self. not distinguishing for class method in a module.
     def count
       self.all.count
     end
-  
+
 
 
 
