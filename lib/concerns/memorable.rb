@@ -3,6 +3,7 @@ module Memorable #self. not distinguishing for class method in a module.
 
   module InstanceMethods
     def initialize
+      super
       self.class.all << self
     end
     def to_param
